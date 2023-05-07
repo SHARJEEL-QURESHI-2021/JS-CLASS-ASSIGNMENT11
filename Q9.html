@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:9</title>
+</head>
+<body>
+    <h1>Chp # Function</h1>
+    <ul>
+        <li>
+            <a href="./Home.html" style="color: black; text-decoration: none;">Home</a>
+        </li>
+    </ul>
+    <script>
+         function checkNamePalindrome() {
+            var name = prompt("Enter Name");
+            var nameLength = name.length;
+            var name1 = name.slice(0, Math.floor(nameLength / 2));
+            var name2 = name.slice(Math.ceil(nameLength / 2));
+
+            var reversedName2 = name2.split('').reverse().join('');
+
+            if (name1 === reversedName2) {
+                document.write("<h1>" + "<b>" + "It Is A Palindrome" + "</b>" + "</h1>");
+            } else {
+                document.write("<h1>" + "<b>" + "It Is Not A Palindrome" + "</b>" + "</h1>");
+            }
+        }
+
+        checkNamePalindrome();
+    </script>
+</body>
+</html>

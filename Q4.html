@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:4</title>
+</head>
+
+<body>
+    <h1>Chp # Function</h1>
+    <ul>
+        <li>
+            <a href="./Home.html" style="color: black; text-decoration: none;">Home</a>
+        </li>
+    </ul>
+    <script>
+        num1 = + prompt("Write the First Number:");
+        num2 = + prompt("Write the Second Number:");
+        action = prompt("Write any symbol do you want to sum?\n 1. + | Plus\n 2. - | Minus\n 3. * | Multiply\n 4. / | Divide\n 5. % | Medulous show reminder");
+        if (action == "+") {
+             document.write("<h1>" + "<b>" + "Calculate The Number: " + (num1 + num2) + "</b>" + "</h1>");
+        }
+        else if (action == "-") {
+             document.write("<h1>" + "<b>" + "Calculate The Number: " + (+num1 - num2) + "</b>" + "</h1>");
+        }
+        else if (action == "*") {
+             document.write("<h1>" + "<b>" + "Calculate The Number: " + (num1 * num2) + "</b>" + "</h1>");
+        }
+        else if (action == "/") {
+             document.write("<h1>" + "<b>" + "Calculate The Number: " + (num1 / num2) + "</b>" + "</h1>");
+        }
+        else if (action == "%") {
+             document.write("<h1>" + "<b>" + "Calculate The Number: " + (num1 % num2) + "</b>" + "</h1>");
+        }
+        else {
+            document.write("<h1>" + "<b>" + "You may be entering wrong symbol" + "</b>" + "</h1>");
+        }    
+    </script>
+</body>
+
+</html>

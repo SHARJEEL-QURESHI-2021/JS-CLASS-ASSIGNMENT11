@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:10</title>
+</head>
+
+<body>
+    <h1>Chp # Function</h1>
+    <ul>
+        <li>
+            <a href="./Home.html" style="color: black; text-decoration: none;">Home</a>
+        </li>
+    </ul>
+    <script>
+        var word = "a quIck brown fox jumps over a lazy dog";
+        
+        function capitalizeEachWord() {
+            var arr = word.split(" ");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase();
+            }
+            var capitalizedWord = arr.join(" ");
+            document.write("<h1>" + "<b>" + capitalizedWord + "</b>" + "</h1>");
+        }
+        capitalizeEachWord()
+    </script>
+</body>
+
+</html>
