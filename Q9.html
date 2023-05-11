@@ -14,22 +14,18 @@
         </li>
     </ul>
     <script>
-         function checkNamePalindrome() {
-            var name = prompt("Enter Name");
-            var nameLength = name.length;
-            var name1 = name.slice(0, Math.floor(nameLength / 2));
-            var name2 = name.slice(Math.ceil(nameLength / 2));
+         function checkingPalindrome() {
+            var name = prompt("Enter Name").toUpperCase();
+            var reversedName = name.split('').reverse().join('');
 
-            var reversedName2 = name2.split('').reverse().join('');
-
-            if (name1 === reversedName2) {
-                document.write("<h1>" + "<b>" + "It Is A Palindrome" + "</b>" + "</h1>");
+            if (name === reversedName) {
+                document.write("<h1>" + "<b>" + "THE WORD: " + name + " IS A PALINDROME" + "</b>" + "</h1>");
             } else {
-                document.write("<h1>" + "<b>" + "It Is Not A Palindrome" + "</b>" + "</h1>");
+                document.write("<h1>" + "<b>" + "THE WORD: " + name + " IS NOT A PALINDROME" + "</b>" + "</h1>");
             }
         }
 
-        checkNamePalindrome();
+        checkingPalindrome();
     </script>
 </body>
 </html>
